@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcuestasMacro", "EcuestasMacro\EcuestasMacro.csproj", "{46B09425-1858-4063-8EFE-471EC5C87C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcuestasMacro", "EcuestasMacro\EcuestasMacro.csproj", "{46B09425-1858-4063-8EFE-471EC5C87C3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcuenstasMacro.Neg", "EcuenstasMacro.Neg\EcuenstasMacro.Neg.csproj", "{4205700E-C706-4402-B8C2-33697B810DC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcuenstasMacro.Neg", "EcuenstasMacro.Neg\EcuenstasMacro.Neg.csproj", "{4205700E-C706-4402-B8C2-33697B810DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasMacro.Dat", "EncuestasMacro.Dat\EncuestasMacro.Dat.csproj", "{FC08819E-F314-4BB5-AA19-675F9CEEE8ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncuestasMacro.Dat", "EncuestasMacro.Dat\EncuestasMacro.Dat.csproj", "{FC08819E-F314-4BB5-AA19-675F9CEEE8ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasMacro.Entity", "EncuestasMacro.Entity\EncuestasMacro.Entity.csproj", "{1247C54B-4732-45EF-A906-CA0F1F30CA41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncuestasMacro.Entity", "EncuestasMacro.Entity\EncuestasMacro.Entity.csproj", "{1247C54B-4732-45EF-A906-CA0F1F30CA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasMacro.DTO", "EncuestasMacro.DTO\EncuestasMacro.DTO.csproj", "{1B3132E8-9803-4E39-BBD3-64B657541EA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1247C54B-4732-45EF-A906-CA0F1F30CA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1247C54B-4732-45EF-A906-CA0F1F30CA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1247C54B-4732-45EF-A906-CA0F1F30CA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3132E8-9803-4E39-BBD3-64B657541EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3132E8-9803-4E39-BBD3-64B657541EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3132E8-9803-4E39-BBD3-64B657541EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3132E8-9803-4E39-BBD3-64B657541EA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

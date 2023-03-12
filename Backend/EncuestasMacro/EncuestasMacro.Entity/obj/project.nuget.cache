@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FyCfAiqNzzgJnQc/RgVKAIFSibcFo/d5KHCkjxitxHgplkhHDXyE/okTIpO5i5LaCIjENlTfMi6c2qnIrxu0rg==",
+  "dgSpecHash": "tZgFWvbW+SVjmzVgkDd+Sr0Fy8pbDCEUlL7PCZe7tRAakJlya6+nf3709JpupXbh9fC4V1eX9y01ZXwDyiH6Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
+  "projectFilePath": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,3 +1,6 @@
+using EncuestasMacro.Dat;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration.GetConnectionString("ConnectionStrings");
+builder.Services.AddDbContext<ApiDbContext>(x => x.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

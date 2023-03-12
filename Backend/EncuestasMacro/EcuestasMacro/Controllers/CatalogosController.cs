@@ -1,82 +1,30 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EcuenstasMacro.Neg.Catalogos;
+using EncuestasMacro.Dat;
+using EncuestasMacro.DTO;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace EcuestasMacro.Controllers
 {
-    public class CatalogosController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CatalogosController : ControllerBase
     {
-        // GET: CatalogosController
-        public ActionResult GetCatalogos()
-        {
-            return View();
-        }
+        private readonly ApiDbContext _context;
+        public CatalogosController(ApiDbContext context) => _context = context;
 
-        // GET: CatalogosController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: CatalogosController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: CatalogosController/Create
+        // GET: api/<CatalogosController>
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IEnumerable<ResGetCatalogo> Get(ReqGetCatalogo raw)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                var cara = new CatalogosNeg(_context).ObtenerCatalogos(raw);
+                return cara;
             }
-            catch
+            catch (Exception)
             {
-                return View();
-            }
-        }
-
-        // GET: CatalogosController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: CatalogosController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: CatalogosController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: CatalogosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
+                throw;
             }
         }
     }

@@ -22,3 +22,20 @@ C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuenstasMacro.Neg\
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\refint\EcuenstasMacro.Neg.dll
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.pdb
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\ref\EcuenstasMacro.Neg.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EcuenstasMacro.Neg.deps.json
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EcuenstasMacro.Neg.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EcuenstasMacro.Neg.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EncuestasMacro.Dat.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EncuestasMacro.DTO.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EncuestasMacro.Dat.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\bin\Debug\net6.0\EncuestasMacro.DTO.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.csproj.AssemblyReference.cache
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.AssemblyInfoInputs.cache
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.AssemblyInfo.cs
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.csproj.CoreCompileInputs.cache
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.csproj.CopyComplete
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\refint\EcuenstasMacro.Neg.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\EcuenstasMacro.Neg.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuenstasMacro.Neg\obj\Debug\net6.0\ref\EcuenstasMacro.Neg.dll

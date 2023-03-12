@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcuenstasMacro.Neg\EcuenstasMacro.Neg.csproj" />
+    <ProjectReference Include="..\EncuestasMacro.Dat\EncuestasMacro.Dat.csproj" />
+    <ProjectReference Include="..\EncuestasMacro.DTO\EncuestasMacro.DTO.csproj" />
   </ItemGroup>
 
 </Project>

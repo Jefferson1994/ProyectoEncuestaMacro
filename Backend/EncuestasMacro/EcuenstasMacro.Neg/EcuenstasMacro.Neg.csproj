@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EncuestasMacro.Dat\EncuestasMacro.Dat.csproj" />
+    <ProjectReference Include="..\EncuestasMacro.DTO\EncuestasMacro.DTO.csproj" />
+  </ItemGroup>
+
 </Project>

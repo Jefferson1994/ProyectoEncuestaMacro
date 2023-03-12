@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj": {}
+    "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj": {
+    "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
         "projectName": "EncuestasMacro.Entity",
-        "projectPath": "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
-        "packagesPath": "C:\\Users\\Usuario iTC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario iTC\\Desktop\\Angular\\Encuesta\\EncuestasMacro\\EncuestasMacro.Entity\\obj\\",
+        "projectPath": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj",
+        "packagesPath": "C:\\Users\\aloarte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario iTC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aloarte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

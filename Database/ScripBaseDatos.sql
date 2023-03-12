@@ -65,7 +65,7 @@ GO
 -- Table EncuestaMacro..Cliente
 -- -----------------------------------------------------
 CREATE TABLE  EncuestaMacro..clientes (
-  IdPregunta INT NOT NULL AUTO_INCREMT,
+  IdPregunta INT NOT NULL IDENTITY(1,1),
   idCliente INT NOT NULL ,
   Cedula VARCHAR(10) NULL,
   Nombre VARCHAR(45) NULL,
@@ -186,7 +186,7 @@ INSERT INTO preguntas (Pregunta,IdCategoriaFK)VALUES ('SUS OBSERVACIONES FINALES
 -- -----------------------------------------------------
 -- ELIMINAR TABLAS
 -- -----------------------------------------------------
-DROP TABLE escalas, categorias, preguntas
+--DROP TABLE escalas, categorias, preguntas
 -- -----------------------------------------------------
 -- SCRIP INSERT CLIENTES
 -- -----------------------------------------------------

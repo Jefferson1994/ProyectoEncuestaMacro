@@ -1,4 +1,3 @@
-
 use EncuestaMacro
 go
 
@@ -66,26 +65,6 @@ as
 		end
 GO
 
--- -----------------------------------------------------
--- EJECUTAR PROCEEDIMIENTO ALMACENDA AGREGAR ENCUESTA
--- -----------------------------------------------------
-
-use EncuestaMacro
-GO
-declare @o_mensaje 		 varchar(150),
-		@o_codigo		 int
-
-execute sp_registrar_encuesta
-		@id_pregunta	= 8,
-		@id_cliente		= 1,
-		@id_sucursal	= 2,
-		@respuesta		= 'SI',
-		@o_mensaje 		= @o_mensaje output,
-		@o_codigo		= @o_codigo output
-
-		SELECT @o_mensaje
-		SELECT @o_codigo
-GO
 
 
 

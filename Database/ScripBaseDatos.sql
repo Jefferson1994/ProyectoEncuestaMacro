@@ -158,13 +158,13 @@ CREATE TABLE  EncuestaMacro..encuestas (
 
 
 -- -----------------------------------------------------
--- SCRIP INSERT Escala  1
+-- SCRIP INSERT Escala  
 -- -----------------------------------------------------
 INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (1,'SI','NO',1)
 INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'0','10',2)
 INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'1','400',3)
 -- -----------------------------------------------------
--- SCRIP INSERT CATEGORIA 2
+-- SCRIP INSERT CATEGORIA 
 -- -----------------------------------------------------
 
 INSERT INTO categorias (idCategoria,Categoria,IdEscalaFK)VALUES ('1','ESTÁNDARES',1)
@@ -172,7 +172,7 @@ INSERT INTO categorias (idCategoria,Categoria,IdEscalaFK)VALUES ('2','SATISFACCI
 INSERT INTO categorias (idCategoria,Categoria,IdEscalaFK)VALUES ('3','RECOMENDACIÓN',3)
 
 -- -----------------------------------------------------
--- SCRIP INSERT PREGUNTAS 3
+-- SCRIP INSERT PREGUNTAS 
 -- -----------------------------------------------------
 
 
@@ -187,7 +187,41 @@ INSERT INTO preguntas (Pregunta,IdCategoriaFK)VALUES ('SUS OBSERVACIONES FINALES
 -- ELIMINAR TABLAS
 -- -----------------------------------------------------
 DROP TABLE escalas, categorias, preguntas
+-- -----------------------------------------------------
+-- SCRIP INSERT CLIENTES
+-- -----------------------------------------------------
 
+INSERT INTO clientes (IdCliente,Cedula,Nombre,Apellido,Sexo,Edad)VALUES ('1','1712345678','DAVID','ESTRADA','Masculino','35')
+INSERT INTO clientes (IdCliente,Cedula,Nombre,Apellido,Sexo,Edad)VALUES ('2','0923459824','YOLANDA','RAMOS','Femenino','23')
+INSERT INTO clientes (IdCliente,Cedula,Nombre,Apellido,Sexo,Edad)VALUES ('3','1104394976','JEFFERSON','SARANGO','Masculino','28')
+
+-- -----------------------------------------------------
+-- SCRIP INSERT PROVINCIAS
+-- -----------------------------------------------------
+INSERT INTO provincias (IdProvincia ,Nombre)VALUES ('1', 'Loja')
+INSERT INTO provincias (IdProvincia ,Nombre)VALUES ('2', 'Manabí')
+INSERT INTO provincias (IdProvincia ,Nombre)VALUES ('3', 'Pichincha')
+INSERT INTO provincias (IdProvincia ,Nombre)VALUES ('4', 'Guaya')
+
+-- -----------------------------------------------------
+-- SCRIP INSERT CANTONES
+-- -----------------------------------------------------
+INSERT INTO cantones (IdCanton ,IdProvinciaFK,Nombre)VALUES ('1','1', 'Loja')
+INSERT INTO cantones (IdCanton ,IdProvinciaFK,Nombre)VALUES ('2','2', 'Pedernales')
+INSERT INTO cantones (IdCanton ,IdProvinciaFK,Nombre)VALUES ('3','3', 'Rumiñahui')
+INSERT INTO cantones (IdCanton ,IdProvinciaFK,Nombre)VALUES ('4','4', 'Guayaquil')
+INSERT INTO cantones (IdCanton ,IdProvinciaFK,Nombre)VALUES ('5','3', 'Quito')
+
+
+-- -----------------------------------------------------
+-- SCRIP INSERT SUCURSALES
+-- -----------------------------------------------------
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('1','29 de Mayo','1')
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('2','Tarqui','2')
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('3','San Rafael','3')
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('4','Guasmo','4')
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('5','Mena 2','5')
+INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('6','Quicentro Norte','5')
 
 -- -----------------------------------------------------
 -- Consulta para reportes 

@@ -39,21 +39,17 @@ as
 
 	end
 
-
-	if @tipo = 'preguntas'
+	if @tipo = 'sucursales'
 	begin
-				
-        select 	pre.IdPregunta 	as CODIGO, 
-                pre.Pregunta	as DESCRIPICION,
-                cat.Categoria as CATEGORIA,
-                es.ValorInicial as VALOR,
-                es.ValorFinal as VALOR
-        FROM preguntas pre
-            JOIN categorias cat
-                 on ( cat.IdCategoria = pre.IdCategoriaFK )
-            JOIN escalas es
-                ON (es.IdEscala = cat.IdEscalaFk)
-        WHERE pre.IdPregunta = convert( int, @codigo )
+	
+		select 	su.IdSucursal 	as CODIGO, 
+				su.Sucursal 	as SUCURSAL,
+				c.Nombre        as Canton
+		FROM sucursales su
+			JOIN cantones c
+				on ( c.IdCanton = su.IdCantonFK )
+		
+
 	end
 
     if @tipo = 'escala'
@@ -81,5 +77,7 @@ go
 -- -----------------------------------------------------
 
 execute EncuestaMacro..sp_listar_catalogos
-	@codigo			= -1,
-	@tipo			='provincias'
+	@codigo			= 1,
+	@tipo			='categorias'
+
+

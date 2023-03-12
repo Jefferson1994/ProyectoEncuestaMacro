@@ -15,7 +15,7 @@ namespace EncuestasMacro.Dat
             _context = context;
         }
 
-        public static string cadenaConexion = "Server=localhost\\SQLEXPRESS;Database=EncuenstaMacro;Trusted_Connection=True; Data Source=.;User ID=sa;";
+        public static string cadenaConexion = "Data Source=.\\SQLEXPRESS;Initial Catalog=EncuestasMacro;User ID=sa;Password=admin";
 
         public List<ResGetCatalogo> ObtenerCatalogos(ReqGetCatalogo reqGetCatalogo)
         {

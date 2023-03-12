@@ -1,16 +1,16 @@
 use EncuestaMacro
 go
 
-if object_id('sp_listar_catalogos') is not null
-	drop procedure sp_listar_catalogos
+if object_id('sp_listar_Catalogo') is not null
+	drop procedure sp_listar_Catalogo
 go
 
 /*====================================================================================
 --autor:		  jsarango
 --Fecha creacion: 11/03/2023
---Descripcion:    Obtiene catalogos.
+--Descripcionn:    Obtiene clientes.
 --====================================================================================*/
-create procedure sp_listar_catalogos
+create procedure sp_listar_Catalogo
 (
 	@codigo			int,
 	@tipo			varchar(45)
@@ -20,8 +20,8 @@ as
 	if @tipo = 'provincias'
 	begin 
 	
-		select 	IdProvincia as CODIGO,
-				Nombre 		as DESCRIPICION
+		select 	IdProvincia as Codigo,
+				Nombre 		as Descripcion
 		from provincias
 		
 	end 
@@ -29,20 +29,18 @@ as
 
 	if @tipo = 'cantones'
 	begin
-	
-		select 	c.IdCanton 	as CODIGO, 
-				c.Nombre 	as DESCRIPICION
+		select 	c.IdCanton 	as Codigo, 
+				c.Nombre 	as Descripcion
 		FROM cantones c
-			JOIN provincias p
-				on ( p.IdProvincia = c.IdProvinciaFK )
-		WHERE p.IdProvincia = convert( int, @codigo )
+		JOIN provincias p
+		ON (c.IdProvinciaFK=p.IdProvincia)
 
 	end
 
 	if @tipo = 'sucursales'
 	begin
 	
-		select 	su.IdSucursal 	as CODIGO, 
+		select 	su.IdSucursal 	as Codigo, 
 				su.Sucursal 	as SUCURSAL,
 				c.Nombre        as Canton
 		FROM sucursales su
@@ -55,29 +53,23 @@ as
     if @tipo = 'escala'
 	begin
 				
-       select 	IdEscala as CODIGO,
+       select 	IdEscala as Codigo,
 				ValorInicial 		as AFIRMATIVO,
 				ValorFinal as NEGATIVO,
-				ldCategoria as Categoria
+				IdCategoria as Categoria
 
 		from escalas
 	end
     if @tipo = 'categorias'
 	begin
 				
-         select 	IdCategoria as CODIGO,
-				Categoria 		as DESCRIPICION
+         select 	IdCategoria as Codigo,
+				Categoria 		as Descripcion
 		from categorias
 	end
 
 go
 
--- -----------------------------------------------------
--- EJECUTAR PROCEEDIMIENTO ALMACENADO CATALOGO
--- -----------------------------------------------------
 
-execute EncuestaMacro..sp_listar_catalogos
-	@codigo			= 1,
-	@tipo			='categorias'
 
 

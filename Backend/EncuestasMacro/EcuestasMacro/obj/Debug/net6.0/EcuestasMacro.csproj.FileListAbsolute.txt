@@ -62,7 +62,6 @@ C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuestasMacro\obj\D
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuestasMacro\obj\Debug\net6.0\EcuestasMacro.pdb
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuestasMacro\obj\Debug\net6.0\EcuestasMacro.genruntimeconfig.cache
 C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EcuestasMacro\obj\Debug\net6.0\ref\EcuestasMacro.dll
-C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuestasMacro\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuestasMacro\bin\Debug\net6.0\appsettings.json
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuestasMacro\bin\Debug\net6.0\EcuestasMacro.exe
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EcuestasMacro\bin\Debug\net6.0\EcuestasMacro.deps.json

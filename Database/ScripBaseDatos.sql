@@ -7,16 +7,13 @@
 -- -----------------------------------------------------
 -- Schema EncuestaMacro
 -- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema EncuestaMacro
--- -----------------------------------------------------
 CREATE DATABASE  EncuestaMacro;
 USE EncuestaMacro ;
+-- -----------------------------------------------------
+-- Tabla provincias
+-- -----------------------------------------------------
 
--- -----------------------------------------------------
--- Table EncuestaMacro..provincias
--- -----------------------------------------------------
+
 CREATE TABLE  EncuestaMacro..provincias (
   IdProvincia INT NOT NULL,
   Nombre VARCHAR(45) NULL,
@@ -39,7 +36,7 @@ CREATE TABLE  EncuestaMacro..cantones (
     REFERENCES EncuestaMacro..provincias (IdProvincia)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-  GO 
+GO 
 
 
 
@@ -83,7 +80,7 @@ CREATE TABLE  EncuestaMacro..escalas (
   IdEscala INT NOT NULL,
   ValorInicial VARCHAR(45) NULL,
   ValorFinal VARCHAR(45) NULL,
-  ldCategoria INT NULL,  
+  IdCategoria INT NULL,  
   PRIMARY KEY (IdEscala))
 GO
 
@@ -103,7 +100,7 @@ CREATE TABLE  EncuestaMacro..categorias (
     REFERENCES EncuestaMacro..escalas (IdEscala)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-  GO
+GO
 
 
 
@@ -121,7 +118,7 @@ CREATE TABLE  EncuestaMacro..preguntas (
     REFERENCES EncuestaMacro..categorias (IdCategoria)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-  GO
+GO
 
 
 
@@ -154,15 +151,15 @@ CREATE TABLE  EncuestaMacro..encuestas (
     REFERENCES EncuestaMacro..preguntas (IdPregunta)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-
+GO
 
 
 -- -----------------------------------------------------
 -- SCRIP INSERT Escala  
 -- -----------------------------------------------------
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (1,'SI','NO',1)
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'0','10',2)
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'1','400',3)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoria)VALUES (1,'SI','NO',1)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoria)VALUES (2,'0','10',2)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoria)VALUES (3,'1','400',3)
 -- -----------------------------------------------------
 -- SCRIP INSERT CATEGORIA 
 -- -----------------------------------------------------
@@ -222,44 +219,41 @@ INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('3','San Rafael',
 INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('4','Guasmo','4')
 INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('5','Mena 2','5')
 INSERT INTO sucursales (idSucursal,Sucursal,IdCantonFK)VALUES ('6','Quicentro Norte','5')
-
+GO
 -- -----------------------------------------------------
 -- Consulta para reportes 
 -- -----------------------------------------------------
 
-SELECT s.Sucursal,
-	   c.Nombre as Canton,
-	   p.Nombre as Provincia,
-	   cl.Cedula as Cedula,
-	   cl.Nombre as Nombre,
-	   cl.Apellido as Apellido,
-	   cat.Categoria as  CategoriaPregunta,
-	   pre.Pregunta as Pregunta,
-	   e.Respuesta as Respuesta,
-	   e.FechaRegistro as Fecha
-FROM encuestas e 
-	JOIN  sucursales s
-	 ON (e.IdSucursalFK=s.IdSucursal)
-	 JOIN cantones c
-	 ON (s.IdCantonFK=c.IdCanton)
-	 JOIN provincias p
-	 ON (p.IdProvincia=c.IdProvinciaFK)
-	 JOIN clientes cl
-	 ON (cl.idCliente=e.IdClienteFK)
-	 JOIN preguntas pre
-	 ON (pre.IdPregunta=e.IdPreguntaFK)
-	 JOIN categorias cat
-	 ON (cat.IdCategoria=pre.IdCategoriaFK)
+--SELECT s.Sucursal,
+--	   c.Nombre as Canton,
+--	   p.Nombre as Provincia,
+--	   cl.Cedula as Cedula,
+--	   cl.Nombre as Nombre,
+--	   cl.Apellido as Apellido,
+--	   cat.Categoria as  CategoriaPregunta,
+--	   pre.Pregunta as Pregunta,
+--	   e.Respuesta as Respuesta,
+--	   e.FechaRegistro as Fecha
+--FROM encuestas e 
+--	JOIN  sucursales s
+--	 ON (e.IdSucursalFK=s.IdSucursal)
+--	 JOIN cantones c
+--	 ON (s.IdCantonFK=c.IdCanton)
+--	 JOIN provincias p
+--	 ON (p.IdProvincia=c.IdProvinciaFK)
+--	 JOIN clientes cl
+--	 ON (cl.idCliente=e.IdClienteFK)
+--	 JOIN preguntas pre
+--	 ON (pre.IdPregunta=e.IdPreguntaFK)
+--	 JOIN categorias cat
+--	 ON (cat.IdCategoria=pre.IdCategoriaFK)
 
 
 -- -----------------------------------------------------
 -- Crear Vista
 -- -----------------------------------------------------
-
-
-   
-CREATE VIEW reporte_encuestas
-as
+CREATE VIEW reporte_encuestas 
+as 
 SELECT s.Sucursal,
 	   c.Nombre as Canton,
 	   p.Nombre as Provincia,
@@ -282,3 +276,19 @@ FROM encuestas e
 	 ON (pre.IdPregunta=e.IdPreguntaFK)
 	 JOIN categorias cat
 	 ON (cat.IdCategoria=pre.IdCategoriaFK)
+GO
+
+-- -----------------------------------------------------
+-- ELIMINAR TABLAS
+-- -----------------------------------------------------
+--DROP TABLE encuestas
+--DROP TABLE preguntas 
+--DROP TABLE categorias
+--DROP TABLE escalas
+--DROP TABLE sucursales
+--DROP TABLE cantones
+--DROP TABLE provincias
+--DROP VIEW reporte_encuestas
+--DROP TABLE clientes
+-- ELIMINAR TABLAS
+-- -----------------------------------------------------

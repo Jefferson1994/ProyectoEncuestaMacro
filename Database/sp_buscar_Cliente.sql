@@ -36,10 +36,3 @@ as
 
 go
 
--- -----------------------------------------------------
--- EJECUTAR PROCEEDIMIENTO ALMACENADO CATALOGO
--- -----------------------------------------------------
-
-execute EncuestaMacro..sp_buscar_clientes
-	@codigo			= 1,
-	@tipo			='buscarcliente'

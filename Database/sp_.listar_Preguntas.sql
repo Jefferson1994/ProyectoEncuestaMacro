@@ -12,7 +12,7 @@ go
 --====================================================================================*/
 create procedure sp_listar_preguntas
 (
-	@codigo			int,
+
 	@tipo			varchar(45)
 
 )
@@ -20,12 +20,12 @@ as
 	if @tipo = 'preguntas'
 	begin
 	
-		select 	pre.IdPregunta as CODIGO,
-		pre.Pregunta   as DESCRIPICION,
-		cat.IdCategoria as IDCATEGORIA,
-		cat.Categoria as NOMBRE_CATEGORIA,
-		es.ValorFinal as VALORI_NCIAL,
-		es.ValorFinal as VALOR_FINAL
+		select 	pre.IdPregunta as Codigo,
+		pre.Pregunta   as Descripcion,
+		cat.IdCategoria as Idcategoria,
+		cat.Categoria as nombrecategoria,
+		es.ValorFinal as valorinical,
+		es.ValorFinal as valorfinal
 		from preguntas pre
 		JOIN categorias cat
 		on ( pre.IdCategoriaFK = cat.IdCategoria)
@@ -34,11 +34,3 @@ as
 	end
 
 go
-
--- -----------------------------------------------------
--- EJECUTAR PROCEEDIMIENTO ALMACENADO CATALOGO PREGUNTAS
--- -----------------------------------------------------
-
-execute EncuestaMacro..sp_listar_preguntas
-	@codigo			= 8,
-	@tipo			='preguntas'

@@ -1,16 +1,16 @@
 use EncuestaMacro
 go
 
-if object_id('sp_listar_catalogos') is not null
-	drop procedure sp_listar_catalogos
+if object_id('sp_listar_Catalogo') is not null
+	drop procedure sp_listar_Catalogo
 go
 
 /*====================================================================================
 --autor:		  jsarango
 --Fecha creacion: 11/03/2023
---Descripcion:    Obtiene catalogos.
+--Descripcion:    Obtiene clientes.
 --====================================================================================*/
-create procedure sp_listar_catalogos
+create procedure sp_listar_Catalogo
 (
 	@codigo			int,
 	@tipo			varchar(45)
@@ -76,7 +76,7 @@ go
 -- EJECUTAR PROCEEDIMIENTO ALMACENADO CATALOGO
 -- -----------------------------------------------------
 
-execute EncuestaMacro..sp_listar_catalogos
+execute EncuestaMacro..sp_listar_Catalogo
 	@codigo			= 1,
 	@tipo			='categorias'
 

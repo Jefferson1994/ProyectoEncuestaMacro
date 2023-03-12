@@ -65,7 +65,7 @@ GO
 -- Table EncuestaMacro..Cliente
 -- -----------------------------------------------------
 CREATE TABLE  EncuestaMacro..clientes (
-  IdPregunta INT NOT NULL AUTO_INCREMT,
+  IdPregunta INT NOT NULL ,
   idCliente INT NOT NULL ,
   Cedula VARCHAR(10) NULL,
   Nombre VARCHAR(45) NULL,
@@ -160,9 +160,9 @@ CREATE TABLE  EncuestaMacro..encuestas (
 -- -----------------------------------------------------
 -- SCRIP INSERT Escala  
 -- -----------------------------------------------------
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (1,'SI','NO',1)
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'0','10',2)
-INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,Comentario,IdCategoriaFK)VALUES (2,'1','400',3)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoriaFK)VALUES (1,'SI','NO',1)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoriaFK)VALUES (2,'0','10',2)
+INSERT INTO escalas (idEscala,ValorInicial,ValorFinal,IdCategoriaFK)VALUES (2,'1','400',3)
 -- -----------------------------------------------------
 -- SCRIP INSERT CATEGORIA 
 -- -----------------------------------------------------
@@ -186,7 +186,7 @@ INSERT INTO preguntas (Pregunta,IdCategoriaFK)VALUES ('SUS OBSERVACIONES FINALES
 -- -----------------------------------------------------
 -- ELIMINAR TABLAS
 -- -----------------------------------------------------
-DROP TABLE escalas, categorias, preguntas
+
 -- -----------------------------------------------------
 -- SCRIP INSERT CLIENTES
 -- -----------------------------------------------------
@@ -282,3 +282,17 @@ FROM encuestas e
 	 ON (pre.IdPregunta=e.IdPreguntaFK)
 	 JOIN categorias cat
 	 ON (cat.IdCategoria=pre.IdCategoriaFK)
+
+
+-- -----------------------------------------------------
+-- ELIMINAR TABLAS
+-- -----------------------------------------------------
+--DROP TABLE encuestas
+--DROP TABLE preguntas 
+--DROP TABLE categorias
+--DROP TABLE escalas
+--DROP TABLE sucursales
+--DROP TABLE cantones
+--DROP TABLE provincias
+--DROP VIEW reporte_encuestas
+--DROP TABLE clientes

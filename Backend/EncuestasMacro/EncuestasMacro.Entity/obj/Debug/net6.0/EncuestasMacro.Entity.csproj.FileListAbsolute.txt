@@ -1,0 +1,24 @@
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.deps.json
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.pdb
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.csproj.AssemblyReference.cache
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.AssemblyInfoInputs.cache
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.AssemblyInfo.cs
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.csproj.CoreCompileInputs.cache
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\refint\EncuestasMacro.Entity.dll
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.pdb
+C:\Users\aloarte\source\repos\EcuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\ref\EncuestasMacro.Entity.dll
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.deps.json
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\bin\Debug\net6.0\EncuestasMacro.Entity.pdb
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.csproj.AssemblyReference.cache
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.AssemblyInfoInputs.cache
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.AssemblyInfo.cs
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\refint\EncuestasMacro.Entity.dll
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\EncuestasMacro.Entity.pdb
+C:\Users\Usuario iTC\Desktop\Angular\Encuesta\EncuestasMacro\EncuestasMacro.Entity\obj\Debug\net6.0\ref\EncuestasMacro.Entity.dll

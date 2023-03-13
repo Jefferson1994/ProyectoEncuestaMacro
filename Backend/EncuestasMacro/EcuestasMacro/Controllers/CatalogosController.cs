@@ -1,4 +1,5 @@
-﻿using EcuenstasMacro.Neg.Catalogos;
+﻿using Azure;
+using EcuenstasMacro.Neg.Catalogos;
 using EncuestasMacro.Dat;
 using EncuestasMacro.DTO;
 using Microsoft.AspNetCore.Mvc;
@@ -35,8 +36,8 @@ namespace EcuestasMacro.Controllers
         {
             try
             {
-                var cara = new CatalogosNeg(_context).ObtenerPreguntas(raw);
-                return cara;
+                var preguntas = new CatalogosNeg(_context).ObtenerPreguntas(raw);
+                return preguntas;
             }
             catch (Exception)
             {

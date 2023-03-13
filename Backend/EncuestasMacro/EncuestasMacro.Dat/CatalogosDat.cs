@@ -15,22 +15,26 @@ namespace EncuestasMacro.Dat
             _context = context;
         }
 
-        public static string cadenaConexion = "Data Source=.\\SQLEXPRESS;Initial Catalog=EncuestasMacro;User ID=sa;Password=admin";
+        public static string cadenaConexion = "Data Source=PC01ASP11\\SQLEXPRESS;Initial Catalog=EncuestaMacro;Persist Security Info=True;User ID=sa;Password=admin";
 
-        public List<ResGetCatalogo> ObtenerCatalogos(ReqGetCatalogo reqGetCatalogo)
+        public DataTable ObtenerCatalogos(ReqGetCatalogo reqGetCatalogo)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
 
             try
             {
                 conexion.Open();
-                SqlCommand cmd = new SqlCommand("sp_listar_catalogos", conexion);
+                SqlCommand cmd = new SqlCommand("sp_listar_catalogo", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@codigo", reqGetCatalogo.codigo);
                 cmd.Parameters.AddWithValue("@tipo", reqGetCatalogo.tipo);
                 
                 var resultQuery = cmd.ExecuteNonQuery();
-                return null;
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
 
             }
             catch (Exception)
@@ -42,22 +46,38 @@ namespace EncuestasMacro.Dat
                 conexion.Close(); 
             }
 
-            //try
-            //{
-            //    List<SqlParameter> parms = new List<SqlParameter>
-            //    {
-            //        // Create parameter(s)    
-            //        new SqlParameter { ParameterName = "@codigo", Value = reqGetCatalogo.codigo },
-            //        new SqlParameter { ParameterName = "@tipo", Value = reqGetCatalogo.tipo }
-            //    };
+           
+        }
 
-            //    var res = _context.resGetCatalogos.FromSqlRaw("sp_listar_catalogos").ToList();
-            //    return res;
-            //}
-            //catch (Exception)
-            //{
-            //    throw;
-            //}
+        public DataTable ObtenerPreguntas(ReqGetPreguntas reqGetPreguntas)
+        {
+            SqlConnection conexion = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand("sp_listar_preguntas", conexion);
+                cmd.Parameters.AddWithValue("@codigo", reqGetPreguntas.codigo);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                var resultQuery = cmd.ExecuteNonQuery();
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+
         }
     }
 }

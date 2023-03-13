@@ -1,4 +1,5 @@
-﻿using EncuestasMacro.DTO;
+﻿using EcuenstasMacro.Neg.Encuesta;
+using EncuestasMacro.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcuestasMacro.Controllers
@@ -16,8 +17,8 @@ namespace EcuestasMacro.Controllers
         {
             try
             {
-                //var cliente = new ClienteNeg(_context).ObtenerCliente(raw);
-                return null;
+                var encuesta = new EncuestaNeg(_configuracion).AgregarEncuesta(raw);
+                return encuesta;
             }
             catch (Exception)
             {

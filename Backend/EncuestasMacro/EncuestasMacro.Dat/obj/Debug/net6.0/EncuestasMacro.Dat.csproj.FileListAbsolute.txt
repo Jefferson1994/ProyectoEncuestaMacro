@@ -26,7 +26,9 @@ C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\Encue
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Dat.dll
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Dat.pdb
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.DTO.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.dll
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.DTO.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.pdb
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\EncuestasMacro.Dat.csproj.AssemblyReference.cache
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\EncuestasMacro.Dat.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\EncuestasMacro.Dat.AssemblyInfoInputs.cache
@@ -37,5 +39,3 @@ C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\Encue
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\refint\EncuestasMacro.Dat.dll
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\EncuestasMacro.Dat.pdb
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\ref\EncuestasMacro.Dat.dll
-C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.dll
-C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.pdb

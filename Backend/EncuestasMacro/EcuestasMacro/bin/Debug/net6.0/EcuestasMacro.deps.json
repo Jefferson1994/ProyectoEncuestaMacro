@@ -725,7 +725,8 @@
       "EcuenstasMacro.Neg/1.0.0": {
         "dependencies": {
           "EncuestasMacro.DTO": "1.0.0",
-          "EncuestasMacro.Dat": "1.0.0"
+          "EncuestasMacro.Dat": "1.0.0",
+          "EncuestasMacro.Entity": "1.0.0"
         },
         "runtime": {
           "EcuenstasMacro.Neg.dll": {}
@@ -743,8 +744,16 @@
         }
       },
       "EncuestasMacro.DTO/1.0.0": {
+        "dependencies": {
+          "EncuestasMacro.Entity": "1.0.0"
+        },
         "runtime": {
           "EncuestasMacro.DTO.dll": {}
+        }
+      },
+      "EncuestasMacro.Entity/1.0.0": {
+        "runtime": {
+          "EncuestasMacro.Entity.dll": {}
         }
       }
     }
@@ -1277,6 +1286,11 @@
       "sha512": ""
     },
     "EncuestasMacro.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncuestasMacro.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

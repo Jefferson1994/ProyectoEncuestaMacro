@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EncuestasMacro.Dat\EncuestasMacro.Dat.csproj" />
     <ProjectReference Include="..\EncuestasMacro.DTO\EncuestasMacro.DTO.csproj" />
+    <ProjectReference Include="..\EncuestasMacro.Entity\EncuestasMacro.Entity.csproj" />
   </ItemGroup>
 
 </Project>

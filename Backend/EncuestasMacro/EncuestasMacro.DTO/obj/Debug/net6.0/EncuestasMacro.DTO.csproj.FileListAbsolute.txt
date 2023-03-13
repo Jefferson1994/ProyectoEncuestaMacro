@@ -10,3 +10,6 @@ C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\Encue
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\obj\Debug\net6.0\refint\EncuestasMacro.DTO.dll
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\obj\Debug\net6.0\EncuestasMacro.DTO.pdb
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\obj\Debug\net6.0\ref\EncuestasMacro.DTO.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\bin\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\bin\Debug\net6.0\EncuestasMacro.Entity.pdb
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.DTO\obj\Debug\net6.0\EncuestasMacro.DTO.csproj.CopyComplete

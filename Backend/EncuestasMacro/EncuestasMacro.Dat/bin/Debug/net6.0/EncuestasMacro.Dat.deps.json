@@ -675,8 +675,16 @@
         }
       },
       "EncuestasMacro.DTO/1.0.0": {
+        "dependencies": {
+          "EncuestasMacro.Entity": "1.0.0"
+        },
         "runtime": {
           "EncuestasMacro.DTO.dll": {}
+        }
+      },
+      "EncuestasMacro.Entity/1.0.0": {
+        "runtime": {
+          "EncuestasMacro.Entity.dll": {}
         }
       }
     }
@@ -1157,6 +1165,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "EncuestasMacro.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncuestasMacro.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

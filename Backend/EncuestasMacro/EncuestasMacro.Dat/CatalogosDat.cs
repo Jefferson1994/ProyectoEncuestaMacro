@@ -51,6 +51,9 @@ namespace EncuestasMacro.Dat
 
         public DataTable ObtenerPreguntas(ReqGetPreguntas reqGetPreguntas)
         {
+
+
+            
             SqlConnection conexion = new SqlConnection(cadenaConexion);
 
             try

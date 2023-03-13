@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EcuestasMacro.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class CatalogosController : ControllerBase
     {

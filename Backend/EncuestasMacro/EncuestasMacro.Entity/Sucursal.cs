@@ -2,7 +2,7 @@
 
 namespace EncuestasMacro.Entity
 {
-    internal class Sucursal
+    public class Sucursal
     {
         public int IdSucursal { get; set; }
         public string NombreSucursal { get; set; } = string.Empty;

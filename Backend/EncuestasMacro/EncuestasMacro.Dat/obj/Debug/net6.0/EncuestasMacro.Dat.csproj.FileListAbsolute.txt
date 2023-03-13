@@ -37,3 +37,5 @@ C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\Encue
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\refint\EncuestasMacro.Dat.dll
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\EncuestasMacro.Dat.pdb
 C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\obj\Debug\net6.0\ref\EncuestasMacro.Dat.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.dll
+C:\Users\aloarte\source\repos\ProyectoEncuestaMacro\Backend\EncuestasMacro\EncuestasMacro.Dat\bin\Debug\net6.0\EncuestasMacro.Entity.pdb

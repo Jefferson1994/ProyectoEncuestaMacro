@@ -1129,11 +1129,24 @@
       "EncuestasMacro.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EncuestasMacro.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/EncuestasMacro.DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/EncuestasMacro.DTO.dll": {}
+        }
+      },
+      "EncuestasMacro.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EncuestasMacro.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EncuestasMacro.Entity.dll": {}
         }
       }
     }
@@ -3463,12 +3476,18 @@
       "type": "project",
       "path": "../EncuestasMacro.DTO/EncuestasMacro.DTO.csproj",
       "msbuildProject": "../EncuestasMacro.DTO/EncuestasMacro.DTO.csproj"
+    },
+    "EncuestasMacro.Entity/1.0.0": {
+      "type": "project",
+      "path": "../EncuestasMacro.Entity/EncuestasMacro.Entity.csproj",
+      "msbuildProject": "../EncuestasMacro.Entity/EncuestasMacro.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "EncuestasMacro.DTO >= 1.0.0",
-      "EncuestasMacro.Dat >= 1.0.0"
+      "EncuestasMacro.Dat >= 1.0.0",
+      "EncuestasMacro.Entity >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3503,6 +3522,9 @@
             },
             "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.DTO\\EncuestasMacro.DTO.csproj": {
               "projectPath": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.DTO\\EncuestasMacro.DTO.csproj"
+            },
+            "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj": {
+              "projectPath": "C:\\Users\\aloarte\\source\\repos\\ProyectoEncuestaMacro\\Backend\\EncuestasMacro\\EncuestasMacro.Entity\\EncuestasMacro.Entity.csproj"
             }
           }
         }

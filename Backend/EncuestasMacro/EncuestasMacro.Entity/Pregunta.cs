@@ -1,7 +1,7 @@
 ﻿
 namespace EncuestasMacro.Entity
 {
-    internal class Pregunta
+    public class Pregunta
     {
         public int IdPregunta { get; set; }
         public string? PreguntaName { get; set; }

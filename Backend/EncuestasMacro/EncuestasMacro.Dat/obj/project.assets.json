@@ -1113,11 +1113,24 @@
       "EncuestasMacro.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EncuestasMacro.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/EncuestasMacro.DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/EncuestasMacro.DTO.dll": {}
+        }
+      },
+      "EncuestasMacro.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EncuestasMacro.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EncuestasMacro.Entity.dll": {}
         }
       }
     }
@@ -3442,6 +3455,11 @@
       "type": "project",
       "path": "../EncuestasMacro.DTO/EncuestasMacro.DTO.csproj",
       "msbuildProject": "../EncuestasMacro.DTO/EncuestasMacro.DTO.csproj"
+    },
+    "EncuestasMacro.Entity/1.0.0": {
+      "type": "project",
+      "path": "../EncuestasMacro.Entity/EncuestasMacro.Entity.csproj",
+      "msbuildProject": "../EncuestasMacro.Entity/EncuestasMacro.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {

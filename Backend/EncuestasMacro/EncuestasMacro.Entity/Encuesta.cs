@@ -1,7 +1,7 @@
 ﻿
 namespace EncuestasMacro.Entity
 {
-    internal class Encuesta
+    public class Encuesta
     {
         public Cliente Cliente { get; set; } = new Cliente();
         public string respuesta { get; set; }  = string.Empty;

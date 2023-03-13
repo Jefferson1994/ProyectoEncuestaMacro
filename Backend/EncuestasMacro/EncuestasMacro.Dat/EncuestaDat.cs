@@ -7,21 +7,24 @@ using System.Data;
 
 namespace EncuestasMacro.Dat
 {
-    public class ClienteDat
+    public class EncuestaDat
     {
         private readonly IConfiguration _configuracion;
-        public ClienteDat(IConfiguration configuration) => _configuracion = configuration;
+        public EncuestaDat(IConfiguration configuration) => _configuracion = configuration;
 
-        public DataTable ObtenerCliente(ReqGetCliente reqGetCliente)
+        public DataTable ObtenerCliente(ReqAddEncuesta reqAddEncuesta)
         {
             SqlConnection conexion = new SqlConnection(_configuracion.GetConnectionString("ConnectionStrings"));
 
             try
             {
                 conexion.Open();
-                SqlCommand cmd = new SqlCommand("sp_buscar_clientes", conexion);
+                SqlCommand cmd = new SqlCommand("sp_registrar_encuesta", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@cedula", reqGetCliente.Cedula);
+                //cmd.Parameters.Add("@id_pregunta", reqAddEncuesta.IdPregunta, SqlDbType.VarChar );
+                cmd.Parameters.AddWithValue("@id_cliente", reqAddEncuesta.IdCliente);
+                cmd.Parameters.AddWithValue("@id_sucursal", reqAddEncuesta.IdSucursal);
+                cmd.Parameters.AddWithValue("@respuesta", reqAddEncuesta.Respuesta);
 
                 var resultQuery = cmd.ExecuteNonQuery();
                 DataTable tabla = new DataTable();

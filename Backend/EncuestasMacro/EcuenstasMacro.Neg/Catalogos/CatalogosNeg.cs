@@ -2,21 +2,19 @@
 
 using EncuestasMacro.Dat;
 using EncuestasMacro.DTO;
+using Microsoft.Extensions.Configuration;
 using System.Data;
 
 namespace EcuenstasMacro.Neg.Catalogos
 {
     public class CatalogosNeg
     {
-        private readonly ApiDbContext _context;
-        public CatalogosNeg(ApiDbContext context)
-        {
-            _context = context;
-        }
+        private readonly IConfiguration _configuracion;
+        public CatalogosNeg(IConfiguration configuration) => _configuracion = configuration;
 
         public List<ResGetCatalogo> ObtenerCatalogos(ReqGetCatalogo reqGetCatalogo)
         {
-            DataTable dt = new CatalogosDat(_context).ObtenerCatalogos(reqGetCatalogo);
+            DataTable dt = new CatalogosDat(_configuracion).ObtenerCatalogos(reqGetCatalogo);
 
             var resGetCatalogos = (from rw in dt.AsEnumerable()
                                    select new ResGetCatalogo()
@@ -29,7 +27,7 @@ namespace EcuenstasMacro.Neg.Catalogos
         }
         public List<ResGetPreguntas> ObtenerPreguntas(ReqGetPreguntas reqGetPreguntas)
         {
-            DataTable dt = new CatalogosDat(_context).ObtenerPreguntas(reqGetPreguntas);
+            DataTable dt = new CatalogosDat(_configuracion).ObtenerPreguntas(reqGetPreguntas);
 
             var resGetPreguntas = (from rw in dt.AsEnumerable()
                                    select new ResGetPreguntas()

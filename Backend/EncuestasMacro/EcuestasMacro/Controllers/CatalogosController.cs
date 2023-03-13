@@ -10,8 +10,8 @@ namespace EcuestasMacro.Controllers
     [ApiController]
     public class CatalogosController : ControllerBase
     {
-        private readonly ApiDbContext _context;
-        public CatalogosController(ApiDbContext context) => _context = context;
+        private readonly IConfiguration _configuracion;
+        public CatalogosController(IConfiguration configuration) => _configuracion = configuration;
 
         // GET: api/<CatalogosController>
         [HttpPost]
@@ -20,7 +20,7 @@ namespace EcuestasMacro.Controllers
         {
             try
             {
-                var cara = new CatalogosNeg(_context).ObtenerCatalogos(raw);
+                var cara = new CatalogosNeg(_configuracion).ObtenerCatalogos(raw);
                 return cara;
             }
             catch (Exception)
@@ -35,7 +35,7 @@ namespace EcuestasMacro.Controllers
         {
             try
             {
-                var preguntas = new CatalogosNeg(_context).ObtenerPreguntas(raw);
+                var preguntas = new CatalogosNeg(_configuracion).ObtenerPreguntas(raw);
                 return preguntas;
             }
             catch (Exception)

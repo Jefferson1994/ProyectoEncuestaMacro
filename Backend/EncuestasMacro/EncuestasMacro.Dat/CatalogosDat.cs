@@ -1,6 +1,7 @@
 ﻿
 using EncuestasMacro.DTO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -9,17 +10,12 @@ namespace EncuestasMacro.Dat
     public class CatalogosDat
     {
 
-        private readonly ApiDbContext _context;
-        public CatalogosDat(ApiDbContext context)
-        {
-            _context = context;
-        }
-
-        public static string cadenaConexion = "Data Source=PC01ASP11\\SQLEXPRESS;Initial Catalog=EncuestaMacro;Persist Security Info=True;User ID=sa;Password=admin";
+        private readonly IConfiguration _configuracion;
+        public CatalogosDat(IConfiguration configuration) => _configuracion = configuration;
 
         public DataTable ObtenerCatalogos(ReqGetCatalogo reqGetCatalogo)
         {
-            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlConnection conexion = new SqlConnection(_configuracion.GetConnectionString("ConnectionStrings"));
 
             try
             {
@@ -54,7 +50,7 @@ namespace EncuestasMacro.Dat
 
 
             
-            SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlConnection conexion = new SqlConnection(_configuracion.GetConnectionString("ConnectionStrings"));
 
             try
             {

@@ -9,8 +9,8 @@ namespace EcuestasMacro.Controllers
     [ApiController]
     public class ClienteController : ControllerBase
     {
-        private readonly ApiDbContext _context;
-        public ClienteController(ApiDbContext context) => _context = context;
+        private readonly IConfiguration _configuracion;
+        public ClienteController(IConfiguration configuration) => _configuracion = configuration;
 
         // GET: api/<CatalogosController>
         [HttpPost]
@@ -18,7 +18,7 @@ namespace EcuestasMacro.Controllers
         {
             try
             {
-                var cliente = new ClienteNeg(_context).ObtenerCliente(raw);
+                var cliente = new ClienteNeg(_configuracion).ObtenerCliente(raw);
                 return cliente;
             }
             catch (Exception)

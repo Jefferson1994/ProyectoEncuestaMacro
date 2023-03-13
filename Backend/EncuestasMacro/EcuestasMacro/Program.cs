@@ -10,10 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("ConnectionStrings");
-builder.Services.AddDbContext<ApiDbContext>(x => x.UseSqlServer(connectionString));
-
-
+//var connectionString = builder.Configuration.GetConnectionString("ConnectionStrings");
+//builder.Services.AddDbContext<ApiDbContext>(x => x.UseSqlServer(connectionString));
 
 builder.Services.AddCors(options =>
 {

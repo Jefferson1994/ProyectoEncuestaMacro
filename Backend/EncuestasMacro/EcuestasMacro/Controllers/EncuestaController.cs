@@ -1,6 +1,4 @@
-﻿using EcuenstasMacro.Neg.ClienteNeg;
-using EncuestasMacro.Dat;
-using EncuestasMacro.DTO;
+﻿using EncuestasMacro.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcuestasMacro.Controllers
@@ -9,12 +7,12 @@ namespace EcuestasMacro.Controllers
     [ApiController]
     public class EncuestaController : ControllerBase
     {
-        private readonly ApiDbContext _context;
-        public EncuestaController(ApiDbContext context) => _context = context;
+        private readonly IConfiguration _configuracion;
+        public EncuestaController(IConfiguration configuration) => _configuracion = configuration;
 
         // GET: api/<EncuestaController>
         [HttpPost]
-        public ResGetCliente Get(ReqAddEncuesta raw)
+        public ResAddEncuesta Get(ReqAddEncuesta raw)
         {
             try
             {
